@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<Context>  
+    <Resource auth="Container"  
+        driverClassName="com.mysql.jdbc.Driver"  
+        initialSize="5" maxActive="100" maxIdle="30" maxWait="10000" minIdle="5"  
+        name="jdbc/teste"   
+        type="javax.sql.DataSource"  
+        url= "jdbc:mysql://localhost:3306/sceweb" 
+        username="root"  
+        password="aluno"  
+        validationquery="SELECT 1"   
+        testonborrow="true"   
+        testwhileidle="true"   
+        timebetweenevictionrunsmillis="10000"   
+        minevictableidletimemillis="60000"  
+        />  
+</Context>  
