@@ -111,7 +111,7 @@
 	  ${project.basedir}/src/main/java
 	</sourceDirectory>
 	<testSourceDirectory>
-	  ${project.basedir}/src/java/test
+	  ${project.basedir}/src/test/java
 	</testSourceDirectory>
 	<resources>
 		  <resource>
