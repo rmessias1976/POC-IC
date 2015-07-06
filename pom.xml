@@ -131,8 +131,8 @@
         </configuration>
       </plugin>
 	  <plugin>
-		<groupid>org.jacoco</groupid>
-		<artifactid>jacoco-maven-plugin</artifactid>
+		<groupId>org.jacoco</groupId>
+		<artifactId>jacoco-maven-plugin</artifactId>
 		<version>0.5.5.201112152213</version>
 		<configuration>
 			<destfile>${basedir}/target/coverage-reports/jacoco-unit.exec</destfile>
@@ -155,8 +155,8 @@
 		</executions>
 	  </plugin>
 	  <plugin>
-		<groupid>org.apache.maven.plugins</groupid>
-		<artifactid>maven-compiler-plugin</artifactid>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
 		<configuration>
 			<source>1.7</source>
 			<target>1.7</target>
