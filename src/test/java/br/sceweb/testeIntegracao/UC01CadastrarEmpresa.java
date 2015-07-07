@@ -45,7 +45,7 @@ public class UC01CadastrarEmpresa {
 	/*
 	 * CT01 - verifica o comportamento da camada de servico no cadastro de uma empresa com sucesso
 	 */
-	@Test
+	//@Test
 	public void CT01UC01FBCadastraEmpresa_com_sucesso() {
 		daoEmpresa.exclui("89424232000180");
 		assertEquals("Cadastro realizado com sucesso",daoEmpresa.cadastra(empresa));
@@ -86,7 +86,7 @@ public class UC01CadastrarEmpresa {
 	 * CT03 - verifica o comportamento da camada de dominio no cadastro de uma
 	 * empresa com sucesso
 	 */
-	@Test
+	//@Test
 	public void UC01FBCT03CadastraEmpresa_com_sucesso() {
 		//48526171000185
 		assertEquals("Cadastro realizado com sucesso", fachada.incluirEmpresa("empresa x", "48526171000185", "empresa x", "rua taquari", "12121212", "jose silva", "1212", "contabilidade","jsilva@gmail.com"));
