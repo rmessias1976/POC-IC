@@ -31,7 +31,7 @@ public class UC07ExcluirConvenio {
 	/**************************************************************************
 	 * teste na camada de servico
 	 **************************************************************************/	
-
+	@Ignore("not ready yet")
 	@Test
 	public void CT01UC07ExcluirConveio_com_sucesso() {
 		assertEquals(1,convenioDAO.exclui("33851384000105"));
@@ -39,6 +39,7 @@ public class UC07ExcluirConvenio {
 	/**************************************************************************
 	 * teste na camada de dominio
 	 **************************************************************************/
+	@Ignore("not ready yet")
 	@Test
 	public void CT02UC07ExcluirConveio_com_sucesso() {
 		convenioDAO.cadastra(convenio);

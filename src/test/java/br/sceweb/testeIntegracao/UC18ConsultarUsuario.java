@@ -29,10 +29,13 @@ public class UC18ConsultarUsuario {
 		daoUsuario.cadastra(usuario);
 	}
 
+	@Ignore("not ready yet")
 	@Test
 	public void CT01UC18FBConsultaUsuario_com_sucesso() {
 		assertFalse(daoUsuario.consulta("Teste").isEmpty());
 	}
+	
+	@Ignore("not ready yet")
 	@Test
 	public void CT02UC18FBConsultarUsuario_com_sucesso() {
 		assertEquals(1, daoUsuario.consulta("Teste").size());

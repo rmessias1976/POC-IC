@@ -13,6 +13,7 @@ public class UC24RVE {
 		
 	}
 
+	@Ignore("not ready yet")
 	@Test
 	public void test() {
 		fail("Not yet implemented");

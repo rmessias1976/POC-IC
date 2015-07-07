@@ -39,6 +39,7 @@ public class UC09IncluirEstagio {
 	/*
 	 * CT09 - verifica o comportamento da camada de servico no cadastro de um estagio com sucesso.
 	 */
+	@Ignore("not ready yet")
 	@Test
 	public void UC09FBCT01CadastraEstagio_com_sucesso() {
 		daoEstagio.exclui("1220731");
@@ -51,6 +52,7 @@ public class UC09IncluirEstagio {
 	 * CT09 - verifica o comportamento da camada de servico no cadastro de um
 	 * estagio ja cadastrado
 	 */
+	@Ignore("not ready yet")
 	@Test //(expected=javax.persistence.RollbackException.class)
 	public void UC09A1CT02CadastraEstagio_ja_cadastrado() {
 		daoEstagio.cadastra(estagio);
@@ -66,6 +68,7 @@ public class UC09IncluirEstagio {
 	 * CT03 - verifica o comportamento da camada de dominio no cadastro de uma
 	 * estagio com sucesso
 	 */
+	@Ignore("not ready yet")
 	@Test
 	public void UC09FBCT03CadastraEstagio_com_sucesso() {
 		//48526171000185

@@ -43,6 +43,7 @@ public class UC13CadastrarEstagioSupervisionado {
 		
 	}
 
+	@Ignore("not ready yet")
 	@Test
 	//incluir com sucesso
 	public void UC01FBCT01CadastraEstagioSupervisionado_com_sucesso() {

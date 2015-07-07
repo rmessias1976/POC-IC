@@ -36,6 +36,7 @@ public class UC15AlterarEstagioSupervisionado {
 	public static void tearDownAfterClass() throws Exception {
 	}
 
+	@Ignore("not ready yet")
 	@Test
 	public void test() {
 		fail("Not yet implemented");

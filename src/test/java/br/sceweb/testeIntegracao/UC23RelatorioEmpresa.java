@@ -58,12 +58,14 @@ public class UC23RelatorioEmpresa {
 				}
 	
 	// verifica o comportamento da camada de serviço no relatorios de empresa
+	@Ignore("not ready yet")
 	@Test
 	public void CT01UC23FBRelatorioDeEmpresa_com_sucesso() {
 		assert(hEDAO.lista().size() > 0);
 		
 	}
 	
+	@Ignore("not ready yet")
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	}

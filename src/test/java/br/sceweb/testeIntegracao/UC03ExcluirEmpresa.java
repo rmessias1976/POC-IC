@@ -42,6 +42,7 @@ public class UC03ExcluirEmpresa {
 	/*
 	 * CT01 - verifica o comportamento na camada de persistencia na exclusao de uma empresa por cnpj com sucesso
 	 */
+	@Ignore("not ready yet")
 	@Test
 	public void UC03FBCT01ExcluirEmpresa_CNPJ_com_sucesso() {
 		daoEmpresa.cadastra(empresa);
@@ -55,6 +56,7 @@ public class UC03ExcluirEmpresa {
 	/*
 	 * CT02 - verifica o comportamento na camada de dominio na exclusao de uma empresa por cnpj com sucesso
 	 */
+	@Ignore("not ready yet")
 	@Test
 	public void UC03FBCT02ExcluirEmpresa_CNPJ_com_sucesso() {
 		daoEmpresa.cadastra(empresa);

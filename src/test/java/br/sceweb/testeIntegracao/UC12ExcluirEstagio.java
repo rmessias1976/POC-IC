@@ -36,27 +36,32 @@ public class UC12ExcluirEstagio {
 	/**************************************************************************
 	 * teste na camada de servico
 	 **************************************************************************/
-	
+
+	@Ignore("not ready yet")	 
 	@Test
 	public void CT01UC12FBExcluirConveio_com_sucesso_Camada_Servico() {
 		assertEquals(1, estagioDAO.exclui("1220561"));
 	}
 	
+	@Ignore("not ready yet")
 	@Test
 	public void CT02UC12FA1ExcluirConveio_ra_invalido_Camada_Servico() {
 		assertEquals(0, estagioDAO.exclui("A00000B"));
 	}
 	
+	@Ignore("not ready yet")
 	@Test
 	public void CT03UC12FA2ExcluirConveio_ra_null_Camada_Servico() {
 		assertEquals(0, estagioDAO.exclui(null));
 	}
 	
+	@Ignore("not ready yet")
 	@Test
 	public void CT04UC12FA2ExcluirConveio_ra_branco_Camada_Servico() {
 		assertEquals(0, estagioDAO.exclui(""));
 	}
 	
+	@Ignore("not ready yet")
 	@Test
 	public void CT05UC12FA2ExcluirConveio_ra_naoCadastrado_Camada_Servico() {
 		assertEquals(0, estagioDAO.exclui("0000000"));
@@ -65,27 +70,32 @@ public class UC12ExcluirEstagio {
 	/**************************************************************************
 	 * teste na camada de dominio
 	 **************************************************************************/
+	@Ignore("not ready yet")
 	@Test
 	public void CT06UC12FBExcluirConveio_com_sucesso_Camada_Dominio() {
 		estagioDAO.cadastra(estagio);
 		assertEquals(1, estagioRepositorio.exclui("1220561"));
 	}
 	
+	@Ignore("not ready yet")
 	@Test
 	public void CT07UC12FAExcluirConveio_ra_invalido_Camada_Dominio() {
 		assertEquals(0, estagioRepositorio.exclui("A00000B"));
 	}
 	
+	@Ignore("not ready yet")
 	@Test
 	public void CT08UC12FA2ExcluirConveio_ra_null_Camada_Dominio() {
 		assertEquals(0, estagioRepositorio.exclui(null));
 	}
 	
+	@Ignore("not ready yet")
 	@Test
 	public void CT09UC12FAExcluirConveio_ra_branco_Camada_Dominio() {
 		assertEquals(0, estagioRepositorio.exclui(""));
 	}
 	
+	@Ignore("not ready yet")
 	@Test
 	public void CT10UC12FA2ExcluirConveio_ra_naoCadastrado_Camada_Dominio() {
 		assertEquals(0, estagioRepositorio.exclui("0000000"));

@@ -29,7 +29,8 @@ public class UC13ExcluirEstagioSupervisionado {
 		dao.cadastra(s);
 	}
 	
-	
+
+	@Ignore("not ready yet")	
 	@Test
 	public void CTFB01ExcluirEstagioSupervisionado_Sucesso(){
 		HibernateEstagioSupervisionadoDAO dao = new HibernateEstagioSupervisionadoDAO();
