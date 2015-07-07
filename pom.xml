@@ -186,7 +186,7 @@
 					<!-- Sets the path to the file which contains the execution data. -->
 					<dataFile>${basedir}/target/coverage-reports/jacoco-ut.exec</dataFile>
 					<!-- Sets the output directory for the code coverage report. -->
-					<outputDirectory>${basedir}/target/coverage-result/jacoco-ut</outputDirectory>
+					<outputDirectory>${basedir}/target/coverage-result/jacoco-ut.xml</outputDirectory>
 				</configuration>
 			</execution>			
 		</executions>
