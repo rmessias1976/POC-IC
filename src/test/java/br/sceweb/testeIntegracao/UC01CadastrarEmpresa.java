@@ -45,7 +45,7 @@ public class UC01CadastrarEmpresa {
 	/*
 	 * CT01 - verifica o comportamento da camada de servico no cadastro de uma empresa com sucesso
 	 */
-	//@Test
+	@Test
 	public void CT01UC01FBCadastraEmpresa_com_sucesso() {
 		daoEmpresa.exclui("89424232000180");
 		assertEquals("Cadastro realizado com sucesso",daoEmpresa.cadastra(empresa));
