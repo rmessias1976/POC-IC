@@ -216,7 +216,7 @@
 				</execution>
 				<execution>
 					<id>post-unit-test</id>
-					<phase>prepare-package</phase>
+					<phase>test</phase>
 					<goals>
 						<goal>report</goal>
 					</goals>
