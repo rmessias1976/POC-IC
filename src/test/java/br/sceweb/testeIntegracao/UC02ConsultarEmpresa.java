@@ -50,7 +50,6 @@ public class UC02ConsultarEmpresa {
 	}
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-		daoEmpresa.exclui("89424232000180");//no caso de exception em runtime nao capturado este metodo eh executado
-		
+		//daoEmpresa.exclui("89424232000180");//no caso de exception em runtime nao capturado este metodo eh executado
 	}
 }
