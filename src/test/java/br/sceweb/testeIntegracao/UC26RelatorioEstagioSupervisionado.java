@@ -6,6 +6,7 @@ import static org.junit.Assert.assertFalse;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import br.sceweb.dominio.EstagioSupervisionado;
 import br.sceweb.dominio.Fachada;

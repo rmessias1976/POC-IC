@@ -6,6 +6,7 @@ import org.hibernate.Hibernate;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import br.sceweb.dominio.EstagioSupervisionado;
 import br.sceweb.servico.HibernateEstagioSupervisionadoDAO;

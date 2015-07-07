@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import br.sceweb.dominio.Estagio;
 import br.sceweb.dominio.EstagioRepositorio;

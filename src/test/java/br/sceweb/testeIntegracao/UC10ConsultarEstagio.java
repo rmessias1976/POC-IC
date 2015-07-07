@@ -7,6 +7,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import br.sceweb.dominio.Estagio;
 import br.sceweb.dominio.Fachada;

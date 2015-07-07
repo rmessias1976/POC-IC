@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.Ignore;
 
 import br.sceweb.dominio.Usuario;
 import br.sceweb.servico.DAOFactory;

@@ -6,7 +6,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
+import org.junit.Ignore;
 import br.sceweb.dominio.Estagio;
 import br.sceweb.servico.DAOFactory;
 import br.sceweb.servico.IEstagioDAO;

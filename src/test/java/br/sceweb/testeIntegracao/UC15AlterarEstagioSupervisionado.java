@@ -6,6 +6,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.rules.ExpectedException;
 
 import br.sceweb.dominio.EstagioSupervisionado;
