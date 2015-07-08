@@ -147,6 +147,7 @@
 		</plugin>
 
 		<!-- Está ligado à geração do relatório de cobertura, mas não está funcionando -->
+		<!-- o relatório só é gerado quando não ocorrem erros. ainda precisa ser melhor entendido -->
 		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-failsafe-plugin</artifactId>
@@ -174,7 +175,16 @@
 				</execution>
 			</executions>
 		</plugin>	
-	
+		<plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version>
+			<configuration>
+				<url>http://107.178.218.180:8080/manager/text</url>
+				<server>TomcatServer</server>
+				<path>/scones</path>
+			</configuration>
+		</plugin>	
 		<!-- configuração do plugin jacoco. 
 		     ainda não está funcionando a geração do relatório de cobertura
 			 deveria avaliar a geração de dois relatórios de cobertura
