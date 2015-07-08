@@ -1,7 +1,7 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.rogerio</groupId>
-  <artifactId>teste</artifactId>
+  <artifactId>scone</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>ControleEstagio</name>
@@ -115,7 +115,7 @@
   </dependencies>
 
   <build>
-	<finalName>scones</finalName>
+	
 	<!-- Precisei configurar o plugin de configuração para usar uma versão espcífica do jdk para compilação
 	     pois não não estava conseguindo compilar os casos de testes unitários. -->
     <plugins>
