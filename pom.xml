@@ -182,7 +182,7 @@
 			<configuration>
 				<url>http://107.178.218.180:80/manager/html</url>
 				<server>TomcatServer</server>
-				<path>/scones</path>
+				<path>scones</path>
 			</configuration>
 		</plugin>	
 		<!-- configuração do plugin jacoco. 
