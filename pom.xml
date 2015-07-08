@@ -115,7 +115,7 @@
   </dependencies>
 
   <build>
-	<finalName>SCERMES</finalName>
+	<finalName>scones</finalName>
 	<!-- Precisei configurar o plugin de configuração para usar uma versão espcífica do jdk para compilação
 	     pois não não estava conseguindo compilar os casos de testes unitários. -->
     <plugins>
