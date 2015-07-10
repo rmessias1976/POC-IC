@@ -98,10 +98,9 @@
 		<version>1.0.0.Final</version>
 	</dependency>
 	<dependency>
-		<groupId>javax.servlet</groupId>
+		<groupId>servlet-api</groupId>
 		<artifactId>servlet-api</artifactId>
 		<version>servlet-api</version>
-		<scope>provided</scope>
 	</dependency>	
 	<dependency>
 		<groupId>hamcrest-core</groupId>
