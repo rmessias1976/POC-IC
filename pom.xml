@@ -186,12 +186,12 @@
 				  </resource>
 				  <resource>
 				    <directory>resources</directory>
-	  			    <targetPath>WEB-INF/</targetPath>
+	  			    <targetPath>WEB-INF/classes/</targetPath>
 				    <filtering>true</filtering>
 				  </resource>  
 				  <resource>
 				    <directory>src/main/java/META-INF</directory>
-	  			    <targetPath>WEB-INF/META-INF/</targetPath>
+	  			    <targetPath>WEB-INF/classes/META-INF/</targetPath>
 				    <filtering>true</filtering>
 				  </resource>
 			    </webResources>
