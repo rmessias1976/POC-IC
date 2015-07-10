@@ -7,7 +7,7 @@
         type="javax.sql.DataSource"  
         url= "jdbc:mysql://localhost:3306/sceweb" 
         username="root"  
-        password="aluno"  
+        password="rogerio"  
         validationquery="SELECT 1"   
         testonborrow="true"   
         testwhileidle="true"   
