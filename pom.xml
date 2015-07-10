@@ -101,6 +101,7 @@
 		<groupId>servlet-api</groupId>
 		<artifactId>servlet-api</artifactId>
 		<version>servlet-api</version>
+		<scope>provided</scope>
 	</dependency>	
 	<dependency>
 		<groupId>hamcrest-core</groupId>
