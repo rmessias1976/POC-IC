@@ -180,7 +180,11 @@
 			<artifactId>maven-war-plugin</artifactId>
 			<configuration>
 				<webXml>WebContent\WEB-INF\web.xml</webXml>
-				<directory>WebContent</directory>
+			    <webResources>
+				  <resource>
+				    <directory>WebContent</directory>
+				  </resource>
+			    </webResources>
 			</configuration>
 		</plugin>	
 		<plugin>
