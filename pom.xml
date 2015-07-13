@@ -195,18 +195,60 @@
 				    <filtering>true</filtering>
 				  </resource>
 			    </webResources>
-			</configuration>
+			</configuration>	
 		</plugin>	
 		<plugin>
 			<groupId>org.apache.tomcat.maven</groupId>
 			<artifactId>tomcat7-maven-plugin</artifactId>
 			<version>2.2</version>
-			<configuration>
-				<url>http://107.178.218.180:80/manager/text</url>
-				<server>TomcatServer</server>
-				<update>true</update>
-			</configuration>
+			<executions>
+				<execution>
+					<id>deploy-ti</id>
+					<phase>pre-integration-test</phase>
+					<goals>
+						<goal>deploy</goal>
+					</goals>
+					<!-- Configuração para deploy em ambiente de testes integrados -->
+					<configuration>
+						<url>http://107.178.218.180:80/manager/text</url>
+						<server>TomcatServer</server>
+						<update>true</update>
+					</configuration>				
+				</execution>
+				<execution>
+					<id>deploy-hom</id>
+					<phase>deploy</phase>
+					<goals>
+						<goal>deploy</goal>
+					</goals>
+					<!-- Configuração para deploy em ambiente de homologação -->
+					<configuration>
+						<url>http://107.178.218.180:80/manager/text</url>
+						<server>TomcatServer</server>
+						<update>true</update>
+						<!-- Aqui eu deveria passar o caminho do war que foi versionado -->
+					</configuration>				
+				</execution>
+			</executions>
 		</plugin>	
+		<!-- Plugin do JMeter
+			 Ele vai realizar o teste integrado, após realizar o deploy da aplicação 
+			 Para realizar, é necessário que o arquivo .jmx que faz o teste esteja 
+			 disponível na pasta \test\jmeter -->
+		<plugin>
+			<groupId>com.lazerycode.jmeter</groupId>
+			<artifactId>jmeter-maven-plugin</artifactId>
+			<version>1.10.1</version>
+			<executions>
+				<execution>
+					<id>jmeter-tests</id>
+					<phase>verify</phase>
+					<goals>
+						<goal>jmeter</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>		
 		<!-- configuração do plugin jacoco. 
 		     ainda não está funcionando a geração do relatório de cobertura
 			 deveria avaliar a geração de dois relatórios de cobertura
