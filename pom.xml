@@ -263,7 +263,7 @@
 					<id>get_integration_test_coverage</id>
 					<phase>install</phase>                        
 					<goals>
-						<goal>jmx</goal>
+						<goal>tcp</goal>
 					</goals>
 					<configuration>
 						<hostname>107.178.218.180</hostname>
