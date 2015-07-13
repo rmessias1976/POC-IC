@@ -266,7 +266,7 @@
 						<goal>tcp</goal>
 					</goals>
 					<configuration>
-						<hostname>107.178.218.180</hostname>
+						<hostname>http://107.178.218.180</hostname>
 						<port>8001</port>
 						<outputFile>${basedir}/target/coverage-reports/jacocotogo.exec</outputFile>
 					</configuration>
