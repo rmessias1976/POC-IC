@@ -204,7 +204,7 @@
 			<executions>
 				<execution>
 					<id>deploy-ti</id>
-					<phase>pre-integration-test</phase>
+					<phase>install</phase>
 					<goals>
 						<goal>deploy</goal>
 					</goals>
