@@ -131,7 +131,7 @@
 					</goals>                                             
 					<configuration>                                      
 						<source>                                         
-							log.info('Test message: {}', 'Glug Glu glu!!!!')
+							log.info('Test message: {}', 'Variáveis que foram configuradas ...')
 							log.info('Numero de Execucoes: {}', ${env.NumeroExecucoes})
 							log.info('Numero de Usuarios: {}', ${env.NumeroUsuarios})
 							log.info('Tempo de Rampa: {}', ${env.TempoRampa})
@@ -167,7 +167,7 @@
 			</configuration>
 		</plugin>
 
-		<!-- Esta ligado a geração do relatorio de cobertura, mas nao esta funcionando -->
+		<!-- Esta ligado a geracao do relatorio de cobertura, mas nao esta funcionando -->
 		<!-- o relatorio so e gerado quando nao ocorrem erros. ainda precisa ser melhor entendido -->
 		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -269,9 +269,9 @@
 					</goals>
 					<configuration>
 						<propertiesUser>
-							<TempoRampa>1</TempoRampa>
-							<NumeroUsuarios>2</NumeroUsuarios>
-							<NumeroExecucoes>3</NumeroExecucoes>
+							<NumeroExecucoes>${env.NumeroExecucoes}</NumeroExecucoes>
+							<NumeroUsuarios>${env.NumeroUsuarios}</NumeroUsuarios>							
+							<TempoRampa>${env.TempoRampa}</TempoRampa>
 						</propertiesUser>
 					</configuration>					
 				</execution>
