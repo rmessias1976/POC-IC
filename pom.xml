@@ -116,9 +116,27 @@
 
   <build>
 	
-	<!-- Precisei configurar o plugin de configuração para usar uma versão espcífica do jdk para compilação
-	     pois não não estava conseguindo compilar os casos de testes unitários. -->
+	<!-- Precisei configurar o plugin de configuracao para usar uma versao espcifica do jdk para compilacao
+	     pois nao estava conseguindo compilar os casos de testes unitarios. -->
     <plugins>
+		<plugin>                                                         
+			<groupId>org.codehaus.gmaven</groupId>                       
+			<artifactId>groovy-maven-plugin</artifactId>                 
+			<version>2.0</version>                                       
+			<executions>                                                 
+				<execution>                                              
+					<phase>validate</phase>                              
+					<goals>                                              
+						<goal>execute</goal>                             
+					</goals>                                             
+					<configuration>                                      
+						<source>                                         
+							log.info('Test message: {}', 'Glug Glu glu!!!!')
+						</source>                                        
+					</configuration>                                     
+				</execution>                                             
+			</executions>                                                
+		</plugin>
 		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-compiler-plugin</artifactId>
@@ -146,8 +164,8 @@
 			</configuration>
 		</plugin>
 
-		<!-- Está ligado à geração do relatório de cobertura, mas não está funcionando -->
-		<!-- o relatório só é gerado quando não ocorrem erros. ainda precisa ser melhor entendido -->
+		<!-- Esta ligado a geração do relatorio de cobertura, mas nao esta funcionando -->
+		<!-- o relatorio so e gerado quando nao ocorrem erros. ainda precisa ser melhor entendido -->
 		<plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-failsafe-plugin</artifactId>
@@ -208,7 +226,7 @@
 					<goals>
 						<goal>deploy</goal>
 					</goals>
-					<!-- Configuração para deploy em ambiente de testes integrados -->
+					<!-- Configuracao para deploy em ambiente de testes integrados -->
 					<configuration>
 						<url>http://107.178.218.180:80/manager/text</url>
 						<server>TomcatServer</server>
@@ -221,7 +239,7 @@
 					<goals>
 						<goal>deploy</goal>
 					</goals>
-					<!-- Configuração para deploy em ambiente de homologação -->
+					<!-- Configuracao para deploy em ambiente de homologacao -->
 					<configuration>
 						<url>http://107.178.218.180:80/manager/text</url>
 						<server>TomcatServer</server>
@@ -232,9 +250,9 @@
 			</executions>
 		</plugin>	
 		<!-- Plugin do JMeter
-			 Ele vai realizar o teste integrado, após realizar o deploy da aplicação 
-			 Para realizar, é necessário que o arquivo .jmx que faz o teste esteja 
-			 disponível na pasta \test\jmeter -->
+			 Ele vai realizar o teste integrado, apos realizar o deploy da aplicação 
+			 Para realizar, e necessário que o arquivo .jmx que faz o teste esteja 
+			 disponivel na pasta \test\jmeter -->
 		<plugin>
 			<groupId>com.lazerycode.jmeter</groupId>
 			<artifactId>jmeter-maven-plugin</artifactId>
@@ -249,10 +267,10 @@
 				</execution>
 			</executions>
 		</plugin>		
-		<!-- configuração do plugin jacoco. 
-		     ainda não está funcionando a geração do relatório de cobertura
-			 deveria avaliar a geração de dois relatórios de cobertura
-			 1 - testes unitários
+		<!-- configuracao do plugin jacoco. 
+		     ainda nao está funcionando a geracao do relatorio de cobertura
+			 deveria avaliar a geracao de dois relatorios de cobertura
+			 1 - testes unitarios
 			 2 - testes integrados -->
 		<plugin>
 			<groupId>org.helmetsrequired</groupId>
