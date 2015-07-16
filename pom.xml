@@ -267,6 +267,13 @@
 					<goals>
 						<goal>jmeter</goal>
 					</goals>
+					<configuration>
+						<propertiesUser>
+							<TempoRampa>1</TempoRampa>
+							<NumeroUsuarios>2</NumeroUsuarios>
+							<NumeroExecucoes>3</NumeroExecucoes>
+						</propertiesUser>
+					</configuration>					
 				</execution>
 			</executions>
 		</plugin>		
