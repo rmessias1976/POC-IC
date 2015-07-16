@@ -132,6 +132,7 @@
 					<configuration>                                      
 						<source>                                         
 							log.info('Test message: {}', 'Glug Glu glu!!!!')
+							log.info('Numero de Execucoes: {}', ${env.NumeroExecucoes})
 						</source>                                        
 					</configuration>                                     
 				</execution>                                             
