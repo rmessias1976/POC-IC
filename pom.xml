@@ -10,8 +10,14 @@
   <properties>
     <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
     <maven.compiler.fork>true</maven.compiler.fork>	
-	<sonar.jacoco.itReportPath>${basedir}/target/coverage-reports/**.exec</sonar.jacoco.itReportPath>
+	<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>	
+	<sonar.junit.reportsPath>${basedir}/target/coverage-result/</sonar.junit.reportsPath>
+	<sonar.jacoco.itReportPath>${basedir}/target/coverage-reports/jacocotogo.exec</sonar.jacoco.itReportPath>
+	<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+	<sonar.jacoco.reportPath>${basedir}/target/coverage-reports/jacoco-ut.exec</sonar.jacoco.reportPath>
+	<sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
   </properties>
+
   <dependencies>
 	<dependency>
 		<groupId>antlr</groupId>
