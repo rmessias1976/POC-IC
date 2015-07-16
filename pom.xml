@@ -133,6 +133,8 @@
 						<source>                                         
 							log.info('Test message: {}', 'Glug Glu glu!!!!')
 							log.info('Numero de Execucoes: {}', ${env.NumeroExecucoes})
+							log.info('Numero de Usuarios: {}', ${env.NumeroUsuarios})
+							log.info('Tempo de Rampa: {}', ${env.TempoRampa})
 						</source>                                        
 					</configuration>                                     
 				</execution>                                             
