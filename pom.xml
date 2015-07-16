@@ -9,7 +9,8 @@
   
   <properties>
     <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
-    <maven.compiler.fork>true</maven.compiler.fork>
+    <maven.compiler.fork>true</maven.compiler.fork>	
+	<sonar.jacoco.itReportPath>${basedir}/target/coverage-reports/**.exec</sonar.jacoco.itReportPath>
   </properties>
   <dependencies>
 	<dependency>
